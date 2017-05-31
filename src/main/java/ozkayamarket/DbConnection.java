@@ -39,7 +39,6 @@ import org.slf4j.LoggerFactory;
  * Database Connection for Market Stocks
  * @author ozgun
  * @version 1.0
- * Created Date: XX.XX.XXXX gibi bisi yapabilirsin
  * 
  */
 public class DbConnection {
