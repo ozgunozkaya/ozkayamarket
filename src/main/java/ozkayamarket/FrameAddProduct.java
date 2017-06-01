@@ -36,8 +36,12 @@ import javax.swing.JOptionPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
- *
+ * <h1>Add Product</h1>
+ *This class perfom to display the add product window and get values from the user for new product 
+ * Adding the  New Product to  Oracle Database
+ * <p>It's triggered when the <b>Save Button</b> is clicked.</p>
  * @author ozgun
+ * 
  */
 public class FrameAddProduct extends javax.swing.JFrame {
 

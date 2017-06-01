@@ -36,10 +36,11 @@ import java.util.logging.Level;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
- * Database Connection for Market Stocks
+ * <h1>Database Connection</h1>
+ *This class provide Oracle Database Connection for Market Stocks
  * @author ozgun
- * @version 1.0
- * Created Date: 30.05.2017
+ * @version 1.0 <p>
+ *<b>Created Date: 30.05.2017</b> 
  */
 public class DbConnection {
     private static final org.slf4j.Logger log = LoggerFactory.getLogger(DbConnection.class);

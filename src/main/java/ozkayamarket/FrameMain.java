@@ -37,7 +37,12 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
 /**
-/**
+ * <h1>Main Stocks Table</h1>
+ *This class perform  to display  these buttons <p><b>Add Stock , Add Product , Delete Product  ,Delete Stock   </b></p>
+ * and provide connection with the selected button tables 
+ *  <p>Also provide the Main table of the stock  </p>  <p>
+ * In this class <b> Delete Stock Button </b> perform to delete the selected stock from the Oracle Database 
+ * 
  *
  * @author ozgun
  */

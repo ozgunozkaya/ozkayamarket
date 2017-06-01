@@ -38,7 +38,9 @@ import javax.swing.JOptionPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
- *
+ * <h1>Delete Product</h1>
+ *This Class  perform to get defined products in the combobox <p>
+ * <p>It's triggered when the <b>Delete Product Button</b> is clicked.</p>
  * @author ozgun
  */
 public class FrameDeleteProduct extends javax.swing.JFrame {

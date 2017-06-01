@@ -39,7 +39,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- *
+ * <h1>Add Stock</h1>
+ *This class perform to provide Product ID's in the <b> combobox</b> which is already defined in Oracle Database by user
+ * <p>Main function of the class is adding the new Stock to the Oracle Database</p>
+ * User chose the {@code selectedItem} in the combobox which is already defined product ID's and 
+ * get the other  specified areas values from the user for  new Stock   
+ * <p>It's triggered when the <b>SAVE button</b> is clicked.</p>
  * @author ozgun
  */
 public class FrameAddStock extends javax.swing.JFrame {
@@ -199,7 +204,7 @@ private static final org.slf4j.Logger log = LoggerFactory.getLogger(FrameAddStoc
 /**
  * Button perform to add the new Stock to the Oracle Database
  *  {@code selectedItem} User chose defined product ID's and 
- * Getthe other  values for new Stock input  from the User 
+ * Get the other  values for new Stock input  from the User 
  * It's triggered when the save button is clicked.
  * 
  * @param evt 

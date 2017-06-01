@@ -42,7 +42,9 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
 /**
- * This method perform to provide column and row names in table 
+ * <h1>Stocks List</h1>
+ * This class perform to provide column and row names in table for stocks <p>
+ * Display the defined <b>stock  elements </b>from the Oracle database in the Main Table
  * 
  * @author ozgun
  */
