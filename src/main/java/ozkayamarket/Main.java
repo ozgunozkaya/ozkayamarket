@@ -47,22 +47,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      /*  try {
-            
-            Statement st = conn.createStatement();//sorgu yapmak ıcın arac
-            ResultSet rs = st.executeQuery("SELECT * FROM OM_PRODUCT");//sql sorggu
-            
-            while(rs.next())
-            {
-                System.out.println(rs.getString("NAME"));
-                System.out.println(rs.getString("PRODUCTCOMMENT"));
-            }
-            
-            
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+      
     }
     
 }

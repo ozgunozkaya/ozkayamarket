@@ -218,18 +218,11 @@ private static final org.slf4j.Logger log = LoggerFactory.getLogger(FrameAddStoc
              log.trace("Product Id Selected");
             ps.setString(2, productId);
             ps.setString(3, txtComment.getText());
-            ps.setDouble(4, Double.valueOf(txtBuy.getText())); // valueOf parametre olarak aldıgı strıngı doublea cevırır
+            ps.setDouble(4, Double.valueOf(txtBuy.getText())); //  valueOf parametre olarak aldıgı strıngı doublea cevırır
             ps.setDouble(5, Double.valueOf(txtSell.getText()));
             ps.setInt(6, Integer.parseInt(txtQuantity.getText()));
              log.trace("Get All Stock Values");
-            /*
             
-                Statement select yapmak ıcın
-                PreparedStatement update, delete, ınsert yapmak ıcın
-                
-                Statementda executeQuery() kullanılır
-                PreparedStatementda executeUpdate() kullanılır
-            */
             ps.executeUpdate();
              log.info("Stock added to database");
             JOptionPane.showMessageDialog(null, "Stock has been added successfully!", "Saving successful", 

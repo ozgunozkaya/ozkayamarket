@@ -221,9 +221,9 @@ private static final org.slf4j.Logger log = LoggerFactory.getLogger(FrameMain.cl
             log.trace("Get Selected Stock");
             ps.setString(1, stockId);
             ps.executeUpdate();
-            log.info("Stock is deleted from database");
+        
             tblStock.setModel(new StockTableModel());
-            
+                log.info("Stock is deleted from database");
         } catch (SQLException ex) {
         log.debug("Error Deleting the Stock to database");
 //Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);

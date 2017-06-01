@@ -123,13 +123,13 @@ private static final org.slf4j.Logger log = LoggerFactory.getLogger(FrameDeleteP
             String productId = selectedItemSplit[0]; // birinci eleman her zaman product ıd idir.
             
             ps.setString(1, productId);
-            
+            log.trace("Product  Selected");
             ps.executeUpdate();
             cmbProduct.removeAllItems();
             formWindowOpened(null);
             JOptionPane.showMessageDialog(null, "The Product has been deleted.", "The product deleted", 
                     JOptionPane.INFORMATION_MESSAGE);
-            
+            log.info("The product deleted from database");
         } catch (SQLException ex) {
            log.debug("Error Deleting the Product from the  database");
            //Logger.getLogger(FrameDeleteProduct.class.getName()).log(Level.SEVERE, null, ex);
@@ -144,7 +144,7 @@ private static final org.slf4j.Logger log = LoggerFactory.getLogger(FrameDeleteP
  */
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         Connection conn = DbConnection.getDbConnection();
-         log.info("Connected to Database");
+         log.info("Connected to Database For Product Deleting Frame");
         try {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery("SELECT PRODUCTID, NAME FROM OM_PRODUCT");

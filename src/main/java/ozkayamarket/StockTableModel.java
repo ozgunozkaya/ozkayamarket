@@ -55,14 +55,12 @@ public class StockTableModel extends AbstractTableModel implements TableModel{
     
     /**
      * Display the defined stocks  elements from the Oracle database in the Main Frame
-     * Parametre yok bunda asagidankide kullanalim ornek olarak
      * 
-     *  {@link #getValueAt(int, int) Object}
      */
     public StockTableModel()
     {
         Connection conn = DbConnection.getDbConnection();
-        log.info("Connected to Database");
+        log.info("Connected to Database for Main Stock Table");
         try {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery("SELECT s.STOCKID, s.PRODUCTID, pr.NAME, s.STOCKCOMMENT, s.QUANTITY, "
@@ -81,9 +79,9 @@ public class StockTableModel extends AbstractTableModel implements TableModel{
                 row[6] = rs.getDouble("SELL");
                 
                 rowList.add(row);
-                log.info("All Stocks viewed  on table");
+               
             }
-            
+             log.info("Stock table updated from database");
         } catch (SQLException ex) {
             log.debug("Error Getting the all  Stock information from the  database");
           //  Logger.getLogger(StockTableModel.class.getName()).log(Level.SEVERE, null, ex);

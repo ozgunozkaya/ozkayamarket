@@ -39,7 +39,7 @@ import org.slf4j.LoggerFactory;
  * Database Connection for Market Stocks
  * @author ozgun
  * @version 1.0
- * 
+ * Created Date: 30.05.2017
  */
 public class DbConnection {
     private static final org.slf4j.Logger log = LoggerFactory.getLogger(DbConnection.class);
@@ -53,8 +53,9 @@ public class DbConnection {
             try {
                   DriverManager.registerDriver(new oracle.jdbc.OracleDriver());
             conn = DriverManager.getConnection("jdbc:oracle:thin:@db.inf.unideb.hu:1521:ora11g", "ENG_K79IEQ", "ozgunozkaya");
+            log.info("Database connection succesful");
         } catch (SQLException ex) {
-            log.debug("asd");
+            log.debug("Database Connection Failed");
            // Logger.getLogger(DbConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
             return conn;
