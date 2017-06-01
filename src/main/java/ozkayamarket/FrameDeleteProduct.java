@@ -35,7 +35,6 @@ import java.sql.Statement;
 //import java.util.logging.Level;
 //import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
  * <h1>Delete Product</h1>

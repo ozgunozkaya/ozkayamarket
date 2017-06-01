@@ -34,7 +34,6 @@ import java.sql.SQLException;
 //import java.util.logging.Logger;
 
 import org.slf4j.LoggerFactory;
-import org.slf4j.Logger;
 
 /**
  * <h1>Main Stocks Table</h1>
